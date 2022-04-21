@@ -39,6 +39,17 @@ jobs:
           path: |
             . 
             !venv/
+  
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+
 
   deploy:
     runs-on: ubuntu-latest
