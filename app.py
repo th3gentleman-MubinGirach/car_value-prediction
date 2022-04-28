@@ -35,7 +35,7 @@ def predict():
             Fuel_Type_Petrol = 0
             Fuel_Type_Diesel = 0
             
-        Year = 2020 - Year
+        Year = 2022 - Year
         Seller_Type_Individual = request.form['Seller_Type_Individual']
         if(Seller_Type_Individual=='Individual'):
             Seller_Type_Individual =1
